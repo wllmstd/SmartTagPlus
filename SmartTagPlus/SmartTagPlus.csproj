@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D37F0A4-C72F-4C52-947C-9A9CE81695FD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SmartTagPlus</RootNamespace>
+    <AssemblyName>SmartTagPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="F01-Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F01-Welcome.Designer.cs">
+      <DependentUpon>F01-Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F11-News.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F11-News.Designer.cs">
+      <DependentUpon>F11-News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F12-ConfirmLogOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F12-ConfirmLogOut.Designer.cs">
+      <DependentUpon>F12-ConfirmLogOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F13-AddEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F13-AddEvent.Designer.cs">
+      <DependentUpon>F13-AddEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F14-AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F14-AddStudent.Designer.cs">
+      <DependentUpon>F14-AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F15-UpdateStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F15-UpdateStudent.Designer.cs">
+      <DependentUpon>F15-UpdateStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F16-ConfirmDeleteStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F16-ConfirmDeleteStudent.Designer.cs">
+      <DependentUpon>F16-ConfirmDeleteStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F02-AdminOrUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F02-AdminOrUser.Designer.cs">
+      <DependentUpon>F02-AdminOrUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F03-LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F03-LogIn.Designer.cs">
+      <DependentUpon>F03-LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F04-SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F04-SignIn.Designer.cs">
+      <DependentUpon>F04-SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F05-SignOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F05-SignOut.Designer.cs">
+      <DependentUpon>F05-SignOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F06-InOrOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F06-InOrOut.Designer.cs">
+      <DependentUpon>F06-InOrOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F07-Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F07-Dashboard.Designer.cs">
+      <DependentUpon>F07-Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F08-Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F08-Records.Designer.cs">
+      <DependentUpon>F08-Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F09-Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F09-Students.Designer.cs">
+      <DependentUpon>F09-Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F10-Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F10-Calendar.Designer.cs">
+      <DependentUpon>F10-Calendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="F01-Welcome.resx">
+      <DependentUpon>F01-Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F11-News.resx">
+      <DependentUpon>F11-News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F12-ConfirmLogOut.resx">
+      <DependentUpon>F12-ConfirmLogOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F13-AddEvent.resx">
+      <DependentUpon>F13-AddEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F14-AddStudent.resx">
+      <DependentUpon>F14-AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F15-UpdateStudent.resx">
+      <DependentUpon>F15-UpdateStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F16-ConfirmDeleteStudent.resx">
+      <DependentUpon>F16-ConfirmDeleteStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F02-AdminOrUser.resx">
+      <DependentUpon>F02-AdminOrUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F03-LogIn.resx">
+      <DependentUpon>F03-LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F04-SignIn.resx">
+      <DependentUpon>F04-SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F05-SignOut.resx">
+      <DependentUpon>F05-SignOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F06-InOrOut.resx">
+      <DependentUpon>F06-InOrOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F07-Dashboard.resx">
+      <DependentUpon>F07-Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F08-Records.resx">
+      <DependentUpon>F08-Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F09-Students.resx">
+      <DependentUpon>F09-Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F10-Calendar.resx">
+      <DependentUpon>F10-Calendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
