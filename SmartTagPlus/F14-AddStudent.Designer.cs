@@ -51,7 +51,7 @@ namespace SmartTagPlus
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addstudent_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -230,21 +230,21 @@ namespace SmartTagPlus
             this.textBox11.Size = new System.Drawing.Size(267, 22);
             this.textBox11.TabIndex = 20;
             // 
-            // button1
+            // addstudent_btn
             // 
-            this.button1.Location = new System.Drawing.Point(697, 523);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 23);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Add New";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addstudent_btn.Location = new System.Drawing.Point(697, 523);
+            this.addstudent_btn.Name = "addstudent_btn";
+            this.addstudent_btn.Size = new System.Drawing.Size(267, 23);
+            this.addstudent_btn.TabIndex = 22;
+            this.addstudent_btn.Text = "Add Student";
+            this.addstudent_btn.UseVisualStyleBackColor = true;
             // 
             // F14_AddStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addstudent_btn);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.label9);
@@ -298,6 +298,6 @@ namespace SmartTagPlus
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addstudent_btn;
     }
 }

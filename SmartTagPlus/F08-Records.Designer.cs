@@ -29,72 +29,67 @@ namespace SmartTagPlus
         /// </summary>
         private void InitializeComponent()
         {
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.Button();
+            this.news_btn = new System.Windows.Forms.Button();
+            this.calendar_btn = new System.Windows.Forms.Button();
+            this.students_btn = new System.Windows.Forms.Button();
+            this.records_btn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.print_btn = new System.Windows.Forms.Button();
+            this.clear_btn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dashboard_btn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button6
+            // logout_btn
             // 
-            this.button6.Location = new System.Drawing.Point(54, 543);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 37);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "Logout";
-            this.button6.UseVisualStyleBackColor = true;
+            this.logout_btn.Location = new System.Drawing.Point(54, 543);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(160, 37);
+            this.logout_btn.TabIndex = 11;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
-            // button5
+            // news_btn
             // 
-            this.button5.Location = new System.Drawing.Point(54, 355);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 37);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "News";
-            this.button5.UseVisualStyleBackColor = true;
+            this.news_btn.Location = new System.Drawing.Point(54, 355);
+            this.news_btn.Name = "news_btn";
+            this.news_btn.Size = new System.Drawing.Size(160, 37);
+            this.news_btn.TabIndex = 10;
+            this.news_btn.Text = "News";
+            this.news_btn.UseVisualStyleBackColor = true;
+            this.news_btn.Click += new System.EventHandler(this.news_btn_Click);
             // 
-            // button4
+            // calendar_btn
             // 
-            this.button4.Location = new System.Drawing.Point(54, 282);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 37);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Calendar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.calendar_btn.Location = new System.Drawing.Point(54, 282);
+            this.calendar_btn.Name = "calendar_btn";
+            this.calendar_btn.Size = new System.Drawing.Size(160, 37);
+            this.calendar_btn.TabIndex = 9;
+            this.calendar_btn.Text = "Calendar";
+            this.calendar_btn.UseVisualStyleBackColor = true;
+            this.calendar_btn.Click += new System.EventHandler(this.calendar_btn_Click);
             // 
-            // button3
+            // students_btn
             // 
-            this.button3.Location = new System.Drawing.Point(54, 212);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 37);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Students";
-            this.button3.UseVisualStyleBackColor = true;
+            this.students_btn.Location = new System.Drawing.Point(54, 212);
+            this.students_btn.Name = "students_btn";
+            this.students_btn.Size = new System.Drawing.Size(160, 37);
+            this.students_btn.TabIndex = 8;
+            this.students_btn.Text = "Students";
+            this.students_btn.UseVisualStyleBackColor = true;
+            this.students_btn.Click += new System.EventHandler(this.students_btn_Click);
             // 
-            // button2
+            // records_btn
             // 
-            this.button2.Location = new System.Drawing.Point(54, 144);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 37);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Records";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(54, 76);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 37);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = true;
+            this.records_btn.Location = new System.Drawing.Point(54, 144);
+            this.records_btn.Name = "records_btn";
+            this.records_btn.Size = new System.Drawing.Size(160, 37);
+            this.records_btn.TabIndex = 7;
+            this.records_btn.Text = "Records";
+            this.records_btn.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -106,23 +101,23 @@ namespace SmartTagPlus
             this.dataGridView1.Size = new System.Drawing.Size(821, 408);
             this.dataGridView1.TabIndex = 12;
             // 
-            // button7
+            // print_btn
             // 
-            this.button7.Location = new System.Drawing.Point(490, 59);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(160, 37);
-            this.button7.TabIndex = 13;
-            this.button7.Text = "Print";
-            this.button7.UseVisualStyleBackColor = true;
+            this.print_btn.Location = new System.Drawing.Point(490, 59);
+            this.print_btn.Name = "print_btn";
+            this.print_btn.Size = new System.Drawing.Size(160, 37);
+            this.print_btn.TabIndex = 13;
+            this.print_btn.Text = "Print";
+            this.print_btn.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // clear_btn
             // 
-            this.button8.Location = new System.Drawing.Point(684, 59);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(160, 37);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Clear";
-            this.button8.UseVisualStyleBackColor = true;
+            this.clear_btn.Location = new System.Drawing.Point(684, 59);
+            this.clear_btn.Name = "clear_btn";
+            this.clear_btn.Size = new System.Drawing.Size(160, 37);
+            this.clear_btn.TabIndex = 14;
+            this.clear_btn.Text = "Clear";
+            this.clear_btn.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -131,21 +126,31 @@ namespace SmartTagPlus
             this.textBox1.Size = new System.Drawing.Size(219, 22);
             this.textBox1.TabIndex = 15;
             // 
+            // dashboard_btn
+            // 
+            this.dashboard_btn.Location = new System.Drawing.Point(54, 75);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(160, 37);
+            this.dashboard_btn.TabIndex = 16;
+            this.dashboard_btn.Text = "Dashboard";
+            this.dashboard_btn.UseVisualStyleBackColor = true;
+            this.dashboard_btn.Click += new System.EventHandler(this.dashboard_btn_Click);
+            // 
             // F08_Records
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.dashboard_btn);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.clear_btn);
+            this.Controls.Add(this.print_btn);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.logout_btn);
+            this.Controls.Add(this.news_btn);
+            this.Controls.Add(this.calendar_btn);
+            this.Controls.Add(this.students_btn);
+            this.Controls.Add(this.records_btn);
             this.Name = "F08_Records";
             this.Text = " F08_Records";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -156,15 +161,15 @@ namespace SmartTagPlus
 
         #endregion
 
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button logout_btn;
+        private System.Windows.Forms.Button news_btn;
+        private System.Windows.Forms.Button calendar_btn;
+        private System.Windows.Forms.Button students_btn;
+        private System.Windows.Forms.Button records_btn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button print_btn;
+        private System.Windows.Forms.Button clear_btn;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button dashboard_btn;
     }
 }

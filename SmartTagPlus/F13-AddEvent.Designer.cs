@@ -33,6 +33,7 @@ namespace SmartTagPlus
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.add_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -67,11 +68,21 @@ namespace SmartTagPlus
             this.label2.TabIndex = 3;
             this.label2.Text = "Event";
             // 
+            // add_btn
+            // 
+            this.add_btn.Location = new System.Drawing.Point(338, 437);
+            this.add_btn.Name = "add_btn";
+            this.add_btn.Size = new System.Drawing.Size(239, 29);
+            this.add_btn.TabIndex = 4;
+            this.add_btn.Text = "Add";
+            this.add_btn.UseVisualStyleBackColor = true;
+            // 
             // F13_AddEvent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 753);
+            this.Controls.Add(this.add_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -89,5 +100,6 @@ namespace SmartTagPlus
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button add_btn;
     }
 }

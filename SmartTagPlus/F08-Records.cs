@@ -16,5 +16,36 @@ namespace SmartTagPlus
         {
             InitializeComponent();
         }
+
+        private void dashboard_btn_Click(object sender, EventArgs e)
+        {
+            new F07_Dashboard().Show();
+            this.Hide();
+        }
+
+        private void students_btn_Click(object sender, EventArgs e)
+        {
+            new F09_Students().Show();
+            this.Hide();
+        }
+
+        private void calendar_btn_Click(object sender, EventArgs e)
+        {
+            new F10_Calendar().Show();
+            this.Hide();
+        }
+
+        private void news_btn_Click(object sender, EventArgs e)
+        {
+            new F11_News().Show();
+            this.Hide();
+        }
+
+        private void logout_btn_Click(object sender, EventArgs e)
+        {
+            new F12_ConfirmLogOut().Show();
+            this.Hide();
+        }
+
     }
 }

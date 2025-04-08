@@ -29,71 +29,76 @@ namespace SmartTagPlus
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.dashboard_btn = new System.Windows.Forms.Button();
+            this.records_btn = new System.Windows.Forms.Button();
+            this.students_btn = new System.Windows.Forms.Button();
+            this.calendar_btn = new System.Windows.Forms.Button();
+            this.news_btn = new System.Windows.Forms.Button();
+            this.logout_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // dashboard_btn
             // 
-            this.button1.Location = new System.Drawing.Point(38, 54);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Dashboard";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dashboard_btn.Location = new System.Drawing.Point(38, 54);
+            this.dashboard_btn.Name = "dashboard_btn";
+            this.dashboard_btn.Size = new System.Drawing.Size(160, 37);
+            this.dashboard_btn.TabIndex = 0;
+            this.dashboard_btn.Text = "Dashboard";
+            this.dashboard_btn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // records_btn
             // 
-            this.button2.Location = new System.Drawing.Point(38, 122);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Records";
-            this.button2.UseVisualStyleBackColor = true;
+            this.records_btn.Location = new System.Drawing.Point(38, 122);
+            this.records_btn.Name = "records_btn";
+            this.records_btn.Size = new System.Drawing.Size(160, 37);
+            this.records_btn.TabIndex = 1;
+            this.records_btn.Text = "Records";
+            this.records_btn.UseVisualStyleBackColor = true;
+            this.records_btn.Click += new System.EventHandler(this.records_btn_Click);
             // 
-            // button3
+            // students_btn
             // 
-            this.button3.Location = new System.Drawing.Point(38, 190);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 37);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Students";
-            this.button3.UseVisualStyleBackColor = true;
+            this.students_btn.Location = new System.Drawing.Point(38, 190);
+            this.students_btn.Name = "students_btn";
+            this.students_btn.Size = new System.Drawing.Size(160, 37);
+            this.students_btn.TabIndex = 2;
+            this.students_btn.Text = "Students";
+            this.students_btn.UseVisualStyleBackColor = true;
+            this.students_btn.Click += new System.EventHandler(this.students_btn_Click);
             // 
-            // button4
+            // calendar_btn
             // 
-            this.button4.Location = new System.Drawing.Point(38, 260);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 37);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Calendar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.calendar_btn.Location = new System.Drawing.Point(38, 260);
+            this.calendar_btn.Name = "calendar_btn";
+            this.calendar_btn.Size = new System.Drawing.Size(160, 37);
+            this.calendar_btn.TabIndex = 3;
+            this.calendar_btn.Text = "Calendar";
+            this.calendar_btn.UseVisualStyleBackColor = true;
+            this.calendar_btn.Click += new System.EventHandler(this.calendar_btn_Click);
             // 
-            // button5
+            // news_btn
             // 
-            this.button5.Location = new System.Drawing.Point(38, 333);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 37);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "News";
-            this.button5.UseVisualStyleBackColor = true;
+            this.news_btn.Location = new System.Drawing.Point(38, 333);
+            this.news_btn.Name = "news_btn";
+            this.news_btn.Size = new System.Drawing.Size(160, 37);
+            this.news_btn.TabIndex = 4;
+            this.news_btn.Text = "News";
+            this.news_btn.UseVisualStyleBackColor = true;
+            this.news_btn.Click += new System.EventHandler(this.news_btn_Click);
             // 
-            // button6
+            // logout_btn
             // 
-            this.button6.Location = new System.Drawing.Point(38, 521);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 37);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Logout";
-            this.button6.UseVisualStyleBackColor = true;
+            this.logout_btn.Location = new System.Drawing.Point(38, 521);
+            this.logout_btn.Name = "logout_btn";
+            this.logout_btn.Size = new System.Drawing.Size(160, 37);
+            this.logout_btn.TabIndex = 5;
+            this.logout_btn.Text = "Logout";
+            this.logout_btn.UseVisualStyleBackColor = true;
+            this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
             // label1
             // 
@@ -140,12 +145,12 @@ namespace SmartTagPlus
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.logout_btn);
+            this.Controls.Add(this.news_btn);
+            this.Controls.Add(this.calendar_btn);
+            this.Controls.Add(this.students_btn);
+            this.Controls.Add(this.records_btn);
+            this.Controls.Add(this.dashboard_btn);
             this.Name = "F07_Dashboard";
             this.Text = "F07_Dashboard";
             this.ResumeLayout(false);
@@ -155,12 +160,12 @@ namespace SmartTagPlus
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button dashboard_btn;
+        private System.Windows.Forms.Button records_btn;
+        private System.Windows.Forms.Button students_btn;
+        private System.Windows.Forms.Button calendar_btn;
+        private System.Windows.Forms.Button news_btn;
+        private System.Windows.Forms.Button logout_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
